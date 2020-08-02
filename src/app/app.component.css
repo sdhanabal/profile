@@ -20,6 +20,9 @@
     background-image: url('../assets/saravana_bald.jpeg');
     background-size: cover;
 }
+.project-hybrid-img{
+    content:url('../assets/hybrid.jpeg');
+}
 
 .business-card-buttons {
     display: flex;
