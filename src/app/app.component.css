@@ -21,6 +21,8 @@
     background-size: cover;
 }
 .project-hybrid-img{
+    display: flex;
+    flex-wrap: wrap;
     content:url('../assets/hybrid.jpeg');
 }
 
