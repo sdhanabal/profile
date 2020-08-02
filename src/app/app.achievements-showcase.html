@@ -1,0 +1,65 @@
+<div class="banner-card">
+  <mat-accordion class="wrapper">
+    <mat-expansion-panel (opened)="panelOpenState = true"
+                         (closed)="panelOpenState = false"
+                         [expanded]="true">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Expertise
+        </mat-panel-title>
+        <mat-panel-description>
+          Click to {{panelOpenState ? 'collapse' : 'expand'}}
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <div class="dashboard">
+        <div class="dashboard_chart">
+          <mat-list>
+            <mat-list-item>Python</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>Ansible</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>Shell</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>Angular</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>NodeJS</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>React</mat-list-item>
+          </mat-list>
+        </div>
+        <div class="dashboard_chart">
+          <mat-list>
+            <mat-list-item>SDN</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>SD-WAN</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>Diameter</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>LTE</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>SS7</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>Web App Development</mat-list-item>
+          </mat-list>
+        </div>
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+  <div class="wrapper">
+    <mat-card class="business-card">
+      <mat-card-header>
+        <mat-card-title>Hybrid</mat-card-title>
+        <mat-card-subtitle>SDN Project</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="../assets/Hybrid.JPG" alt="Project Hybrid">
+      <mat-card-content>
+        <p>
+          Short Project Description Goes Here.
+        </p>
+      </mat-card-content>
+      <mat-card-actions class="business-card-buttons">
+        <button mat-raised-button (click)="openDialog()">More Details</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

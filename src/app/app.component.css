@@ -1,0 +1,51 @@
+.banner-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+.wrapper{
+    width: 550px;
+}
+.business-card{
+    padding: 16px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    background-color: rgb(224, 224, 224);
+}
+
+.avatar-image {
+    background-image: url('../assets/saravana_bald.jpeg');
+    background-size: cover;
+}
+
+.business-card-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.business-card-buttons button{
+    background-color: rgb(196, 196, 223);
+}
+
+.business-card mat-card-content{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: medium;
+    margin-left: 30px;
+}
+
+.dashboard{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard_chart{
+    display: block;
+    margin: 5px 5px 5px 16px;
+    padding: 16px;
+}
