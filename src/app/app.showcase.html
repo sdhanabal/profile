@@ -1,0 +1,110 @@
+<div class="banner-card">
+<mat-tab-group mat-stretch-tabs [backgroundColor]="'primary'" class="wrapper">
+  <mat-tab>
+    <ng-template mat-tab-label>
+      About Me
+    </ng-template>
+    <mat-card  [class.mat-elevation-z8]="true">
+      <mat-card-content>
+          <h4>I am a Software Professional with expertise and interest on following areas.</h4>
+        <div class="dashboard">
+          <div class="dashboard_chart">
+            <mat-list>
+              <mat-list-item>Python</mat-list-item>
+              <mat-divider></mat-divider>
+              <mat-list-item>Ansible</mat-list-item>
+              <mat-divider></mat-divider>
+              <mat-list-item>Shell</mat-list-item>
+              <mat-divider></mat-divider>
+              <mat-list-item>Angular</mat-list-item>
+              <mat-divider></mat-divider>
+              <mat-list-item>NodeJS</mat-list-item>
+              <mat-divider></mat-divider>
+              <mat-list-item>React</mat-list-item>
+            </mat-list>
+          </div>
+          <div class="dashboard_chart">
+            <mat-list>
+              <mat-list-item>SDN</mat-list-item>
+              <mat-divider></mat-divider>
+              <mat-list-item>SD-WAN</mat-list-item>
+              <mat-divider></mat-divider>
+              <mat-list-item>Diameter</mat-list-item>
+              <mat-divider></mat-divider>
+              <mat-list-item>LTE</mat-list-item>
+              <mat-divider></mat-divider>
+              <mat-list-item>SS7</mat-list-item>
+              <mat-divider></mat-divider>
+              <mat-list-item>Web App Development</mat-list-item>
+            </mat-list>
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      Thoughts
+    </ng-template>
+    <mat-accordion class="wrapper">
+      <mat-expansion-panel [expanded]="false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Effectiveness vs Efficiency in Test Automation
+          </mat-panel-title>
+          <mat-panel-description>
+            Click to Read / Close
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div class="articles">
+          <p>We start developing an automation script. We fall in love with the script. Hence, we develop it with care, so that it looks elegant, consumes less time, less memory & less CPU. We follow fail-fast approach in automation development. So, when the script fails, we expect a defect in the SUT. Simple right?!</p>
+          <p>However, there can be situations in which an automation script can fail without any defect in SUT. Yes. Because, automating a test is not always about developing code to test the scenario. It is more than just writing code for each steps in test plan. Three important factors has to be considered before starting to automate a test.</p>
+          <p>1. Limitations of the test-bed <br/>
+            2. Known limitations of the SUT (System Under Test). <br/>
+            3. Limitations of the tool used for automation</p>
+          <p>There can be scenarios where a test can fail due to unstable testbed. So, our automation code need to be developed with handlers for environmental issue. Generally, a test case attempts to put the SUT under certain situation and validates if the SUT behaves as expected and recovers the SUT into normal state. There can be specific scenarios known to break the SUT irrecoverably. At nascent stages of product development these cases need not be automated unless acceptable steps are found to recover the testbed and SUT in it. One team member may say "if only this tool has some specific capability, we can automate it easily". Well,! we are limited by the tool we use, aren't we?. Nope, one must use creativity to remove that limitation. We are limited only by our thinking! :-)</p>
+          <p>When we automate a test with all the above consideration, the code may not look elegant or may consume bit more time than expected. However, our priority should be effectiveness of the test automation not the efficiency. Because efficient script that gives inconclusive results is useless. It is like having a pair of beautiful eyes that doesn't help to see any objects in front.</p>
+        </div>
+      </mat-expansion-panel>
+      <mat-expansion-panel [expanded]="false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Certifying user experience on SD-WAN Solutions
+          </mat-panel-title>
+          <mat-panel-description>
+            Click to Read / Close
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div class="articles">
+          <p>Any business retains customers only when the overall experience is pleasant. Particularly in services such as telecommunications, user experience is an indispensable criteria for gaining customer loyalty.</p>
+          <p>Unfortunately the matrices that determines the user experience is not limited to speed and reliability of access network. Moreover, the Software Defined Network architecture provides so much flexibility so that not all components in network orchestration needs to be standardized. Thus, certifying SD-WAN solutions is always a complex task.</p>
+          <p>A three digit result in speed test does not necessarily translate into better user experience. Here, we must consider data about services used by customers over the internet. Its widely known that media sharing, videos streaming, online gaming are few of the most demanded services over internet. Any software solution that promises best internet service experience to customers must be bench-marked against such services.</p>
+          <p>Google's Video Quality Report is one such tool that certifies ISP based on YouTube content delivery. The methodology used in the tool involves DPI on IP packets to make sure at-least 90% of the packet is delivered to customers browser is of HD/SD quality.</p>
+          <p>However, one needs to test the user experience at-least in few more widely used on-demand video serving platforms like NetFlix, Amazon Prime etc. So, one needs to collect data that reflects user experience as much as possible. I think "stats for nerds" is a good place to start for YouTube, and other video players also provide stats on video stream.</p>
+          <p>Cheers.!</p>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      Contributions
+    </ng-template>
+      <mat-card class="business-card">
+        <mat-card-header>
+          <mat-card-title>Hybrid</mat-card-title>
+          <mat-card-subtitle>SDN Project</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image class="project-hybrid-img" src="../assets/hybrid.jpeg" alt="Hybrid Project Explanation Diagram"/>
+        <mat-card-content>
+          <p>
+            Short Project Description Goes Here.
+          </p>
+        </mat-card-content>
+        <mat-card-actions class="business-card-buttons">
+          <button mat-raised-button (click)="openDialog()">More Details</button>
+        </mat-card-actions>
+      </mat-card>
+  </mat-tab>  
+</mat-tab-group>
+</div>

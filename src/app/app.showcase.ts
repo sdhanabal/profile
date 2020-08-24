@@ -3,21 +3,22 @@ import {MatDialog} from '@angular/material/dialog';
 import { MatDialogRef } from "@angular/material/dialog";
 
 @Component({
-  selector: 'achievements-showcase',
-  templateUrl: './app.achievements-showcase.html',
+  selector: 'showcase',
+  templateUrl: './app.showcase.html',
   styleUrls: ['./app.component.css']
 })
-export class AchievementsComponent implements OnInit {
+export class ShowcaseComponent implements OnInit{
+
   title = 'portfolio';
   mailText:string = "";
   isActive:boolean = false;
   panelOpenState = true;
+  tab_bg = this.rgbToHex(241, 236, 236)
 
   constructor(public dialog: MatDialog) {}
 
   ngOnInit() {
   }
-
   // events
   public chartClicked({ event, active }: { event: MouseEvent, active: {}[] }): void {
     console.log(event, active);
@@ -29,6 +30,15 @@ export class AchievementsComponent implements OnInit {
   openDialog() {
     this.dialog.open(HybridDetails);
   }
+  componentToHex(c) {
+    var hex = c.toString(16);
+    return hex.length == 1 ? "0" + hex : hex;
+  }
+  
+  rgbToHex(r, g, b) {
+    return "#" + this.componentToHex(r) + this.componentToHex(g) + this.componentToHex(b);
+  }
+
 }
 
 @Component({

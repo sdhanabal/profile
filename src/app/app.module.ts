@@ -3,14 +3,14 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.business-card';
-import { AchievementsComponent, HybridDetails } from './app.achievements-showcase';
+import { ShowcaseComponent, HybridDetails } from './app.showcase';
 import { AppMaterialModule } from "./app-material.module";
 import { ChartsModule } from 'ng2-charts';
 @NgModule({
   declarations: [
     AppComponent,
-    AchievementsComponent,
-    HybridDetails
+    HybridDetails,
+    ShowcaseComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +20,7 @@ import { ChartsModule } from 'ng2-charts';
     ChartsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent, AchievementsComponent],
+  bootstrap: [AppComponent, ShowcaseComponent],
   entryComponents: [
     HybridDetails
   ]

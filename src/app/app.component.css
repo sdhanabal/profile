@@ -1,19 +1,32 @@
 .banner-card {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin-top: 5px;
+    width: 100%;
 }
 .wrapper{
-    width: 550px;
+    width: 75%;
+}
+.wrapper .articles{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+    margin-left: 30px;    
 }
 .business-card{
     padding: 16px;
     margin-bottom: 16px;
     margin-top: 16px;
-    background-color: rgb(224, 224, 224);
+    background-color: rgb(241, 236, 236);
+    width: 100%;
+    height: auto;
+}
+
+mat-card {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
 }
 
 .avatar-image {
@@ -33,7 +46,7 @@
 }
 
 .business-card-buttons button{
-    background-color: rgb(196, 196, 223);
+    background-color: rgb(255, 255, 255);
 }
 
 .business-card mat-card-content{
@@ -51,6 +64,6 @@
 
 .dashboard_chart{
     display: block;
-    margin: 5px 5px 5px 16px;
-    padding: 16px;
+    margin: 1px;
+    padding: 1px;
 }
