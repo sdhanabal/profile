@@ -7,7 +7,8 @@
     width: 100%;
 }
 .wrapper{
-    width: 75%;
+    width: 100%;
+    max-width: 650px;
 }
 .wrapper .articles{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
