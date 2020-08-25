@@ -1,43 +1,44 @@
-<div class="banner-card">
+<div class="banner-card"  ng-style="{ 'width' : gen_width }">
 <mat-tab-group mat-stretch-tabs [backgroundColor]="'primary'" class="wrapper">
   <mat-tab>
     <ng-template mat-tab-label>
       About Me
     </ng-template>
-    <mat-card  [class.mat-elevation-z8]="true">
+    <mat-card>
       <mat-card-content>
           <h4>I am a Software Professional with expertise and interest on following areas.</h4>
-        <div class="dashboard">
-          <div class="dashboard_chart">
-            <mat-list>
-              <mat-list-item>Python</mat-list-item>
-              <mat-divider></mat-divider>
-              <mat-list-item>Ansible</mat-list-item>
-              <mat-divider></mat-divider>
-              <mat-list-item>Shell</mat-list-item>
-              <mat-divider></mat-divider>
-              <mat-list-item>Angular</mat-list-item>
-              <mat-divider></mat-divider>
-              <mat-list-item>NodeJS</mat-list-item>
-              <mat-divider></mat-divider>
-              <mat-list-item>React</mat-list-item>
-            </mat-list>
-          </div>
-          <div class="dashboard_chart">
-            <mat-list>
-              <mat-list-item>SDN</mat-list-item>
-              <mat-divider></mat-divider>
-              <mat-list-item>SD-WAN</mat-list-item>
-              <mat-divider></mat-divider>
-              <mat-list-item>Diameter</mat-list-item>
-              <mat-divider></mat-divider>
-              <mat-list-item>LTE</mat-list-item>
-              <mat-divider></mat-divider>
-              <mat-list-item>SS7</mat-list-item>
-              <mat-divider></mat-divider>
-              <mat-list-item>Web App Development</mat-list-item>
-            </mat-list>
-          </div>
+        <div class="wrapper skills">
+          <mat-grid-list cols="3" rowHeight="50px">
+            <mat-grid-tile
+                *ngFor="let tile of telecom"
+                [colspan]="tile.cols"
+                [rowspan]="tile.rows"
+                [style.background]="tile.color" class="skills" [class.mat-elevation-z8]="true">
+              <h4>{{tile.text}}</h4>
+            </mat-grid-tile>
+          </mat-grid-list>          
+        </div>
+        <div class="wrapper skills">
+          <mat-grid-list cols="4" rowHeight="50px">
+            <mat-grid-tile
+                *ngFor="let tile of automation"
+                [colspan]="tile.cols"
+                [rowspan]="tile.rows"
+                [style.background]="tile.color" class="skills" [class.mat-elevation-z8]="true">
+                <h4>{{tile.text}}</h4>
+            </mat-grid-tile>
+          </mat-grid-list>
+        </div>        
+        <div class="wrapper skills">
+          <mat-grid-list cols="6" rowHeight="50px">
+            <mat-grid-tile
+                *ngFor="let tile of web"
+                [colspan]="tile.cols"
+                [rowspan]="tile.rows"
+                [style.background]="tile.color" class="skills" [class.mat-elevation-z8]="true">
+                <h4>{{tile.text}}</h4>
+            </mat-grid-tile>
+          </mat-grid-list>
         </div>
       </mat-card-content>
     </mat-card>

@@ -9,6 +9,7 @@
 .wrapper{
     width: 100%;
     max-width: 650px;
+    padding-bottom: 5px;
 }
 .wrapper .articles{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -67,4 +68,10 @@ mat-card {
     display: block;
     margin: 1px;
     padding: 1px;
+}
+.skills {
+    border-radius: 5px;
+}
+.wrapper .skills {
+    margin-top: 10px;
 }
